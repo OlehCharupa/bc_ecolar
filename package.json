@@ -1,0 +1,33 @@
+{
+  "name": "bc_ecolar",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/start.js",
+    "dev": "nodemon src/start.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OlehCharupa/bc_ecolar.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/OlehCharupa/bc_ecolar/issues"
+  },
+  "homepage": "https://github.com/OlehCharupa/bc_ecolar#readme",
+  "dependencies": {
+    "@sendgrid/mail": "^7.4.2",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "joi": "^17.4.0",
+    "mongoose": "^5.12.5"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}
