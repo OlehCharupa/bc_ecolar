@@ -1,4 +1,5 @@
 import { callOrderEmail, emailForClient } from "../../helpers/email.js";
+import { mailEcolar, mailEcolarClient } from "../../helpers/emailEcolar.js"
 import clientModel from "./client.model.js";
 
 export const addOrder = async (req, res) => {
@@ -10,10 +11,9 @@ export const addOrder = async (req, res) => {
         description,
         date
     });
-    // await (user).save();
-    await callOrderEmail(newClient)
-    await emailForClient(newClient)
-    res.status(201).send({ message: 'Email sent' });
+    await mailEcolar(newClient)
+    await mailEcolarClient(newClient)
+    res.status(200).send({ message: 'Email sent' });
 };
 
 
