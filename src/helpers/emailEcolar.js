@@ -54,7 +54,7 @@ export async function mailEcolarClient(newClient) {
         attachments: [{
             filename: 'ecolar_logo_full_transparent.png',
             // encoding: "binary",
-            path: "./public/image/ecolar_logo_full_transparent.png",
+            path: "./public/image/ecolar_logo_full.svg",
             cid: 'logoEcolar.png' //same cid value as in the html img src
         }]
     })
