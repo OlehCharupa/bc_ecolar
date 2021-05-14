@@ -10,7 +10,7 @@ const addClientSchema = Joi.object({
     name: Joi.string().required(),
     email: Joi.string().required(),
     number: Joi.string().required(),
-    description: Joi.string().required(),
+    description: Joi.string(),
     date: Joi.string().required(),
 });
 
