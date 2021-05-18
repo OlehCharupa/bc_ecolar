@@ -4,7 +4,6 @@ import express from "express";
 import mongoose from "mongoose";
 import { getPaths } from "./helpers/utils.js"
 import dotenv from "dotenv"
-import sgMail from "@sendgrid/mail";
 import callRouter from "./endpoints/callRequest/client.routes.js"
 
 export default class Server {
@@ -27,7 +26,7 @@ export default class Server {
     initConfig() {
         const { __dirname } = getPaths(import.meta.url);
         dotenv.config({ path: path.join(__dirname, "../.env") });
-        sgMail.setApiKey(process.env.SENDGRID_API_KEY)
+        // sgMail.setApiKey(process.env.SENDGRID_API_KEY)
     }
 
     initMiddlewares() {
